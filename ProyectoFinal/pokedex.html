@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pokedex.css">
+    <link href="https://fonts.cdnfonts.com/css/the-hand-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/oleo" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <!-- BOTON PARA VOLVER -->
+    <a href="index.html" class="btnInicio">Volver al inicio</a>
+    <h1>MAESTRO POKEMÓN: METZHERY XCARET</h1>
+    <p class="subtitulo">
+        Proyecto API del tercer parcial
+    </p>
+    <img src="img/pikachu.png" width="400px" style="top:0px;" id="pikachu">
+    <div class="search-container">
+    <input type="text" placefolder="Pikachu" id="pokeName" name="pokeName" class="placeholder"><br>
+     <div class="right-section"></div>
+    <img src="img/maestro.png" alt="PokeMaster" id="pokeImg" width="250px" class="pokeImg"><br>
+    </div>
+
+    <br>
+    <div id="pokename" class="pokeimg1" style="left: 100px; top: 200px; font-size: 15px;"></div>
+    <div id="pokeHe" class="pokeimg1" style="left: 100px; top: 220px; font-size: 15px;"></div>
+    <div id="pokeWe" class="pokeimg1" style="left: 100px; top: 240px; font-size: 15px;"></div>
+    <div id="pokeType" class="pokeimg1" style="left: 100px; top: 260px; font-size: 15px;"></div>
+    <div id="pokeitem" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
+    <div id="pokemove1" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
+    <div id="pokemove2" class="pokeimg1" style="left: 100px; top: 300px; font-size: 15px;"></div>
+    <div id="pokemove3" class="pokeimg1" style="left: 100px; top: 320px; font-size: 15px;"></div>
+    <div id="pokemove4" class="pokeimg1" style="left: 100px; top: 340px; font-size: 15px;"></div>
+    <div id="pokeid" class="pokeimg1" style="left: 600px; top: 500px; font-size: 200px; color: yellow;"></div>
+    <div id="pokeorder" class="pokeimg1" style="left: 700px; top: 500px; font-size: 20px; color: orange;"></div>
+
+    <button onclick="fetchPokemon()" class="boton-busqueda">
+            Presiona
+    </button>
+    <div class="grafica">
+        <canvas id="miCanvas"></canvas>
+    </div>
+
+    <audio id="pikachuSound" src="audio/pikachu.mp3"></audio>
+
+    <script src="js/pokedex.js"></script>
+    <script src="js/Chart.js"></script>
+</body>
+</html>
